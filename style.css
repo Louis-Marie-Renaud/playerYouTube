@@ -1,0 +1,73 @@
+body
+{
+	min-height: 100%;
+	width: 80%;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+h3
+{
+	font: Bold 20px Arial;
+}
+
+header
+{
+	text-align: center;
+}
+
+h3
+{
+	text-align: center;
+}
+
+#conteneur
+{
+    display: flex;
+    justify-content: center;
+}
+
+.element:nth-child(1)
+{
+    flex: 1;
+}
+.element:nth-child(2)
+{
+    flex: 3;
+    text-align: center;
+}
+.element:nth-child(3)
+{
+    flex: 1;
+}
+
+#liens
+{
+	height:200px;
+	overflow:hidden;
+	overflow-y:scroll;
+}
+
+#listeGauche
+{
+	background-color: #EDEDEE;
+	padding:6px 0 6px 0;
+}
+
+li
+{
+	cursor: pointer;
+	font: 15px Arial;
+}
+
+button
+{
+	padding:6px 0 6px 0;
+	font:Bold 13px Arial;
+	background:#d34836;
+	color:#fff;
+	padding: 4px;
+	border-radius:2px;
+	border:none;
+	cursor: pointer;
+}

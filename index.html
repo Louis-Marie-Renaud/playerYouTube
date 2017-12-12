@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercice lecture video Youtube</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://use.fontawesome.com/e263457501.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body onload="historiqueEtFavoris()">
+
+	<header>
+        <h1>YouTube Player</h1>
+    </header>
+
+    <div id="conteneur">
+    	<div class="element">
+    		<div id="listeGauche">
+    			<h3>historique</h3>
+		    	<ul id="liens">
+		    	</ul>
+    		</div>
+    	</div>
+    	<div class="element">
+    		<div id="player"></div>
+    		<div>
+    			<label class="form_col">Veuillez entrer l'URL de la vidéo :</label>
+		        <input name="lien" id="lien" type="text" />
+		        <button id="lire">Lire vidéo <i class="fa fa-youtube-play" aria-hidden="true"></i></button>
+		        <button id="ajoutFavoris">Ajouter aux favoris <i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+    		</div>
+    	</div>
+    	<div class="element">
+    		<button id="bt-listeFavoris" type="button" class="btn btn-group-lg" data-target="#listeFavoris">Afficher les <label id="compteur"></label> favoris <i class="fa fa-sort-desc" aria-hidden="true"></i></button>
+    		<div id="listeFavoris" class="tohide">
+		    	<ul  id="favoris">
+		    	</ul>
+    		</div>
+    	</div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
